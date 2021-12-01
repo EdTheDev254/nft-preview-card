@@ -1,0 +1,156 @@
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --mainBlue: hsl(217, 54%, 11%);
+    --cardBlue: hsl(216, 50%, 16%);
+    --lineBlue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+h1, h2, img, p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--mainBlue);
+}
+
+.hero {
+    margin: 40px 20px;
+    background-color: var(--cardBlue);
+    border-radius: 15px;
+}
+.hero-image {
+    padding: 20px;
+}
+.image {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.section1-head {
+    color: var(--white);
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+
+.section1-paragraph {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: var(--softBlue);
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.section2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-bottom: 10px;
+}
+
+.amount,.time {
+    display: flex;
+    align-items: center;
+}
+.clock,.ethereum {
+    padding-right: 5px;
+}
+
+.ethereum-text {
+    color: var(--cyan);
+    font-weight: 600;
+}
+.clock-text {
+    color: var(--softBlue);
+}
+
+
+hr {
+    margin: 0 25px;
+    /*border:1px solid var(--lineBlue);*/
+    border: none;
+    border-block-end: 1px solid var(--lineBlue);
+}
+
+.section3 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.avatar {
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.avatar-text {
+    font-size: 15px;
+    font-weight: 300;
+}
+#one {
+    color: var(--softBlue);
+}
+#two {
+    color: var(--white);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color:var(--white);
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media(min-width:700px) and (max-width:1008px){
+   .hero{
+       width:50%;
+   }
+   
+   body{
+       display:flex;
+       align-items:center;
+       justify-content:center;
+       min-height: 100vh;
+       flex-direction:column;
+   }
+}
+
+@media(min-width:1009px) and (max-width:1920px){
+   .hero{
+       width:30%;
+   }
+   
+   body{
+       display:flex;
+       align-items:center;
+       justify-content:center;
+       min-height: 100vh;
+       flex-direction:column;
+   }
+}
+
+@media(min-width:1921px){
+   .hero{
+       width:20%;
+   }
+   
+   body{
+       display:flex;
+       align-items:center;
+       justify-content:center;
+       min-height: 100vh;
+       flex-direction:column;
+   }
+}
